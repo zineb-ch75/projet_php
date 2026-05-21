@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenMarket - Produits locaux et durables</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #198754;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white ;
+            font-weight: 600;
+        }
+
+        .hero {
+            background-color:white;
+            color: #198754;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            border-radius: 15px 15px 0 0;
+}
+
+        .btn-green {
+            background-color: #198754;
+            color: white;
+            border: none;
+        }
+
+        .btn-green:hover {
+            background-color: #146c43;
+            color: white;
+        }
+
+        footer {
+            background-color: #146c43;
+            color: white;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="imagines/logoo.jpeg" 
+         alt="Logo GreenMarket"
+         width="50"
+         height="50"
+         class="rounded-circle"
+         >
+
+    <span>GreenMarket</span>
+</a>
+
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="acceuil.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="boutique.html">Boutiques</a></li>
+                    <li class="nav-item"><a class="nav-link" href="panier.html"><i class="bi bi-cart3"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="connexion.html">Connexion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dash.html">📋</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">👤</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero" >
+        <div class="container">
+            <h1>Bienvenue sur GreenMarket</h1>
+            <p class="lead">
+                Achetez des produits locaux, bio et artisanaux directement chez les producteurs.
+            </p>
+            <a href="#produits" class="btn btn-light btn-lg mt-3">
+                Voir les produits
+            </a>
+        </div>
+    </section>
+
+    <section id="produits" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nos Produits Populaires</h2>
+            <div class="row g-4">
+                <div class="col-md-4" id="produits-bio">
+                    <div class="card">
+                        <img src="imagines/FRESAS.jpg"
+                             class="card-img-top product-img"
+                             alt="FRESAS"
+                             >
+
+                        <div class="card-body">
+                            <h5 class="card-title">Fraises </h5>
+                            <p class="card-text">
+                                Produit naturel 100% local et artisanal.
+                            </p>
+                            <h4 class="text-success">20 DH</h4>
+                            <button class="btn btn-green w-100">
+                                Ajouter au panier
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="huile-olive">
+                    <div class="card">
+                        <img src="imagines/Aceite Vegetal.jpg"
+                             class="card-img-top product-img"
+                             alt="huile-olive">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Huile d'Olive</h5>
+                            <p class="card-text">
+                                Huile pure extra vierge de production locale.
+                            </p>
+                            <h4 class="text-success">95 DH</h4>
+                            <button class="btn btn-green w-100">
+                                Ajouter au panier
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="produits-bio">
+                    <div class="card">
+                        <img src="imagines/PAN.jpg"
+                             class="card-img-top product-img"
+                             alt="Pain Traditionnel"
+                             >
+                        <div class="card-body">
+                            <h5 class="card-title">Pain Traditionnel </h5>
+                            <p class="card-text">
+                                Pain artisanal préparé avec des ingrédients naturels.
+                            </p>
+                            <h4 class="text-success">10 DH</h4>
+                            <button class="btn btn-green w-100">
+                                Ajouter au panier
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4" id="artisanat">
+                    <div class="card">
+                        <img src="imagines/bougie.jpg"
+                             class="card-img-top product-img"
+                             alt="Bougies Artisanales"
+                             >
+                        <div class="card-body">
+                            <h5 class="card-title">Bougies Artisanales</h5>
+                            <p class="card-text">
+                                Bougies naturelles fabriquées à la main avec des ingrédients écologiques.
+                            </p>
+                            <h4 class="text-success">65 DH</h4>
+                            <button class="btn btn-green w-100">
+                                Ajouter au panier
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="cosmetiques">
+                    <div class="card">
+                        <img src="imagines/savon.jpg"
+                             class="card-img-top product-img"
+                             alt="Savon naturel">
+                        <div class="card-body">
+                            <h5 class="card-title">Savon Naturel</h5>
+                            <p class="card-text">
+                                Bougies naturelles fabriquées à la main avec des ingrédients écologiques.
+                            </p>
+                            <h4 class="text-success">60 DH</h4>
+                            <button class="btn btn-green w-100">
+                                Ajouter au panier
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4">
+                    <div class="card">
+                        <img src="imagines/sacz.jpg"
+                             class="card-img-top product-img"
+                             alt="Sac Artisanal"
+                             >
+
+                        <div class="card-body">
+                            <h5 class="card-title">Sac Artisanal </h5>
+                            <p class="card-text">
+                               Sac fabriqué à la main avec des matériaux naturels.
+                            </p>
+                            <h4 class="text-success">50 DH</h4>
+                            <button class="btn btn-green w-100">
+                                Ajouter au panier
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <h5>GreenMarket</h5>
+            <p>Plateforme de produits locaux et durables</p>
+            <p>© 2026 Tous droits réservés</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="acceuil.js"></script>
+
+</body>
+</html>
+

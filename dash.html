@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - GreenMarket</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .sidebar{
+            width: 240px;
+            height: 100vh;
+            background-color: #198754;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-top: 20px;
+        }
+
+        .sidebar h2{
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .sidebar a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover{
+            background-color: #146c43;
+        }
+
+        .main{
+            margin-left: 240px;
+            padding: 30px;
+        }
+
+        .title{
+            margin-bottom: 30px;
+            color: #198754;
+        }
+
+        .cards{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            background-color: white;
+            width: 220px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h3{
+            margin: 0;
+            color: #555;
+        }
+
+        .card p{
+            font-size: 30px;
+            color: #198754;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        table{
+            width: 100%;
+            background-color: white;
+            border-collapse: collapse;
+            margin-top: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        table th{
+            background-color: #198754;
+            color: white;
+            padding: 15px;
+        }
+
+        table td{
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <h2>GreenMarket</h2>
+
+        <a href="acceuil.html">🏠 Accueil</a>
+        <a href="dash.html">📊 Dashboard</a>
+        <a href="panier.html">🛒 Panier</a>
+        <a href="connexion.html">👤 Connexion</a>
+
+    </div>
+
+    <div class="main">
+
+        <h1 class="title">Dashboard</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Produits</h3>
+                <p>25</p>
+            </div>
+
+            <div class="card">
+                <h3>Commandes</h3>
+                <p>12</p>
+            </div>
+
+            <div class="card">
+                <h3>Clients</h3>
+                <p>8</p>
+            </div>
+
+            <div class="card">
+                <h3>Revenus</h3>
+                <p>3500 DH</p>
+            </div>
+
+        </div>
+
+        <table>
+
+            <tr>
+                <th>Date</th>
+                <th>Action</th>
+                <th>Utilisateur</th>
+            </tr>
+
+            <tr>
+                <td>19/05/2026</td>
+                <td>Ajout produit</td>
+                <td>Zineb</td>
+            </tr>
+
+            <tr>
+                <td>19/05/2026</td>
+                <td>Commande validée</td>
+                <td>Ahmed</td>
+            </tr>
+
+            <tr>
+                <td>20/05/2026</td>
+                <td>Connexion</td>
+                <td>Sara</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisanat Casablanca</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body{
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar{
+            background-color:  #198754;
+        }
+
+        .navbar-brand,
+        .nav-link{
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .sidebar{
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .category-btn{
+            width: 100%;
+            border: none;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            background-color:  #198754;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .category-btn:hover{
+            background-color:  #198754;
+        }
+
+        .products-section{
+            display: none;
+        }
+
+        .product-card{
+            background-color: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            height: 100%;
+        }
+
+        .product-card:hover{
+            transform: translateY(-5px);
+        }
+
+        .product-img{
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .btn-brown{
+            background-color:  #198754;
+            color: white;
+            border: none;
+        }
+
+        .btn-brown:hover{
+            background-color:  #198754;
+            color: white;
+        }
+
+        h2{
+            color:  #198754;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="imagines/logoo.jpeg "
+                 width="50"
+                 height="50"
+                 class="rounded-circle">
+
+            <span class="ms-2">
+                Artisanat Casablanca
+            </span>
+        </a>
+
+        <button class="navbar-toggler bg-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="acceuil.html">
+                        Accueil
+                    </a>
+                </li>
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="boutique.html">
+                        Boutiques
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="panier.html">
+                        🛒
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<div class="container py-5">
+
+    <div class="row">
+
+        <!-- SIDEBAR -->
+
+        <div class="col-md-3">
+
+            <div class="sidebar">
+
+                <h4 class="mb-4 text-center">
+                    Catégories
+                </h4>
+
+                <button class="category-btn"
+                        onclick="showProducts('industries')">
+
+                    Industries Traditionnelles
+
+                </button>
+
+                <button class="category-btn"
+                        onclick="showProducts('textiles')">
+
+                    Textiles & Vêtements
+
+                </button>
+
+                <button class="category-btn"
+                        onclick="showProducts('cuir')">
+
+                    Articles en cuir
+
+                </button>
+
+                <button class="category-btn"
+                        onclick="showProducts('ustensiles')">
+
+                    Ustensiles Traditionnels
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUITS -->
+
+        <div class="col-md-9">
+
+            <!-- INDUSTRIES -->
+
+            <div id="industries" class="products-section">
+
+                <h2 class="mb-4">
+                    Industries Traditionnelles
+                </h2>
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+
+                        <div class="product-card">
+
+                            <img src="imagines/miroire.jpg"
+                                 class="product-img">
+
+                            <div class="p-3">
+
+                                <h5>Miroir gravé traditionnel</h5>
+
+                                <p>
+                                    Miroir artisanal marocain fait à la main.
+                                </p>
+
+                                <h4 class="text-success">
+                                    250 DH
+                                </h4>
+
+                                <button class="btn btn-brown w-100">
+                                    Ajouter au panier
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="product-card">
+
+                            <img src="imagines/cuivre grave.jpg"
+                                 class="product-img">
+
+                            <div class="p-3">
+
+                                <h5>Cuivre gravé</h5>
+
+                                <p>
+                                    Décoration artisanale traditionnelle.
+                                </p>
+
+                                <h4 class="text-success">
+                                    320 DH
+                                </h4>
+
+                                <button class="btn btn-brown w-100">
+                                    Ajouter au panier
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="product-card">
+
+                            <img src="imagines/zellij.jpg"
+                                 class="product-img">
+
+                            <div class="p-3">
+
+                                <h5>Zellige traditionnel</h5>
+
+                                <p>
+                                    Art marocain authentique et coloré.
+                                </p>
+
+                                <h4 class="text-success">
+                                    180 DH
+                                </h4>
+
+                                <button class="btn btn-brown w-100">
+                                    Ajouter au panier
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- TEXTILES -->
+
+            <div id="textiles" class="products-section">
+
+                <h2 class="mb-4">
+                    Textiles et vêtements
+                </h2>
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+
+                        <div class="product-card">
+
+                            <img src="imagines/Jellaba.jpg"
+                                 class="product-img">
+
+                            <div class="p-3">
+
+                                <h5>Djellaba marocaine</h5>
+
+                                <p>
+                                    Vêtement traditionnel élégant marocain.
+                                </p>
+
+                                <h4 class="text-success">
+                                    350 DH
+                                </h4>
+
+                                <button class="btn btn-brown w-100">
+                                    Ajouter au panier
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="product-card">
+
+                            <img src="imagines/caftan.jpg"
+                                 class="product-img">
+
+                            <div class="p-3">
+
+                                <h5>Caftan marocain</h5>
+
+                                <p>
+                                    Tenue artisanale raffinée et moderne.
+                                </p>
+
+                                <h4 class="text-success">
+                                    900 DH
+                                </h4>
+
+                                <button class="btn btn-brown w-100">
+                                    Ajouter au panier
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="product-card">
+
+                            <img src="imagines/babouche.jpg"
+                                 class="product-img">
+
+                            <div class="p-3">
+
+                                <h5>Babouche traditionnelle</h5>
+
+                                <p>
+                                    Chaussure artisanale confortable locale.
+                                </p>
+
+                                <h4 class="text-success">
+                                    120 DH
+                                </h4>
+
+                                <button class="btn btn-brown w-100">
+                                    Ajouter au panier
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CUIR -->
+
+            <div id="cuir" class="products-section">
+
+                <h2 class="mb-4">
+                    Articles en cuir
+                </h2>
+
+                <div class="row g-4">
+
+                    <div class="col-md-3">
+
+                        <div class="product-card">
+
+                            <img src="imagines/porte.jpg"
+                                 class="product-img">
+
+                            <div class="p-3">
+
+                                <h5>Portefeuille en cuir</h5>
+
+                                <p>
+                                    Portefeuille marocain artisanal élégant.
+                                </p>
+
+                                <h4 class="text-success">
+                                    140 DH
+                                </h4>
+
+                                <button class="btn btn-brown w-100">
+                                    Ajouter au panier
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="product-card">
+
+                            <img src="imagines/ceinture.jpg"
+                                 class="product-img">
+
+                            <div class="p-3">
+
+                                <h5>Ceinture en cuir</h5>
+
+                                <p>
+                                    Ceinture traditionnelle haute qualité.
+                                </p>
+
+                                <h4 class="text-success">
+                                    110 DH
+                                </h4>
+
+                                <button class="btn btn-brown w-100">
+                                    Ajouter au panier
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="product-card">
+
+                            <img src="imagines/saccu.jpg"
+                                 class="product-img">
+
+                            <div class="p-3">
+
+                                <h5>Sac traditionnel</h5>
+
+                                <p>
+                                    Sac artisanal marocain en cuir naturel.
+                                </p>
+
+                                <h4 class="text-success">
+                                    280 DH
+                                </h4>
+
+                                <button class="btn btn-brown w-100">
+                                    Ajouter au panier
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="product-card">
+
+                            <img src="imagines/chaussure.jpg"
+                                 class="product-img">
+
+                            <div class="p-3">
+
+                                <h5>Chaussures locales</h5>
+
+                                <p>
+                                    Chaussures marocaines faites à la main.
+                                </p>
+
+                                <h4 class="text-success">
+                                    220 DH
+                                </h4>
+
+                                <button class="btn btn-brown w-100">
+                                    Ajouter au panier
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- USTENSILES -->
+
+            <div id="ustensiles" class="products-section">
+
+                <h2 class="mb-4">
+                    Ustensiles traditionnels
+                </h2>
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+
+                        <div class="product-card">
+
+                            <img src="imagines/tajine.jpg"
+                                 class="product-img">
+
+                            <div class="p-3">
+
+                                <h5>Tajine marocain</h5>
+
+                                <p>
+                                    Tajine artisanal traditionnel en terre.
+                                </p>
+
+                                <h4 class="text-success">
+                                    170 DH
+                                </h4>
+
+                                <button class="btn btn-brown w-100">
+                                    Ajouter au panier
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="product-card">
+
+                            <img src="imagines/tasses.jpg"
+                                 class="product-img">
+
+                            <div class="p-3">
+
+                                <h5>Tasses artisanales</h5>
+
+                                <p>
+                                    Tasses marocaines décorées à la main.
+                                </p>
+
+                                <h4 class="text-success">
+                                    80 DH
+                                </h4>
+
+                                <button class="btn btn-brown w-100">
+                                    Ajouter au panier
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="product-card">
+
+                            <img src="imagines/mugs.jpg"
+                                 class="product-img">
+
+                            <div class="p-3">
+
+                                <h5>Mugs artisanaux</h5>
+
+                                <p>
+                                    Mugs traditionnels inspirés du patrimoine.
+                                </p>
+
+                                <h4 class="text-success">
+                                    90 DH
+                                </h4>
+
+                                <button class="btn btn-brown w-100">
+                                    Ajouter au panier
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function showProducts(category){
+
+    const sections =
+    document.querySelectorAll(".products-section");
+
+    sections.forEach((section)=>{
+
+        section.style.display = "none";
+
+    });
+
+    document.getElementById(category).style.display = "block";
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil - GreenMarket</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container{
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header{
+            background-color: #198754;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .retour{
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            background-color: white;
+            color: #198754;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .profile-img{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .content{
+            padding: 30px;
+        }
+
+        .info{
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+
+        .info-text h3{
+            color: #198754;
+            margin-bottom: 8px;
+        }
+
+        .info-text p{
+            color: #555;
+            font-size: 17px;
+            margin: 0;
+        }
+
+        .edit-btn{
+            background-color: #198754;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .buttons{
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn{
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn-edit{
+            background-color: #198754;
+            color: white;
+        }
+
+        .btn-logout{
+            background-color: #dc3545;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <a href="acceuil.html" class="retour">
+                ⬅ Accueil
+            </a>
+
+            <img src="imagines/pr.jpg"
+                 alt="Photo Profil"
+                 class="profile-img">
+
+            <h1>Zineb</h1>
+
+            <p>Utilisateur GreenMarket</p>
+
+        </div>
+
+        <div class="content">
+
+            <div class="info">
+
+                <div class="info-text">
+                    <h3>Email</h3>
+                    <p>zineb@gmail.com</p>
+                </div>
+
+                <button class="edit-btn">
+                    Modifier
+                </button>
+
+            </div>
+
+            <div class="info">
+
+                <div class="info-text">
+                    <h3>Téléphone</h3>
+                    <p>+212 600000000</p>
+                </div>
+
+                <button class="edit-btn">
+                    Modifier
+                </button>
+
+            </div>
+
+            <div class="info">
+
+                <div class="info-text">
+                    <h3>Ville</h3>
+                    <p>Tétouan, Maroc</p>
+                </div>
+
+                <button class="edit-btn">
+                    Modifier
+                </button>
+
+            </div>
+
+            <div class="info">
+
+                <div class="info-text">
+                    <h3>Mot de passe</h3>
+                    <p>********</p>
+                </div>
+
+                <button class="edit-btn">
+                    Modifier
+                </button>
+
+            </div>
+
+            <div class="info">
+
+                <div class="info-text">
+                    <h3>Date d'inscription</h3>
+                    <p>10 Mai 2026</p>
+                </div>
+
+            </div>
+
+            <div class="buttons">
+
+                <button class="btn btn-edit">
+                    Sauvegarder
+                </button>
+
+                <button class="btn btn-logout">
+                    Déconnexion
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="profile.js"></script>
+
+</body>
+</html>

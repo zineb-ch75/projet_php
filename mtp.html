@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mot de passe oublié - GreenMarket</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body{
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar{
+            background-color: #198754;
+        }
+
+        .navbar-brand,
+        .nav-link{
+            color: white !important;
+            font-weight: 600;
+        }
+
+        .reset-card{
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        h2{
+            color: #198754;
+            font-weight: bold;
+        }
+
+        .btn-green{
+            background-color: #198754;
+            color: white;
+            border: none;
+        }
+
+        .btn-green:hover{
+            background-color: #146c43;
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="acceuil.html">
+
+            <img src="imagines/logoo.jpeg"
+                 alt="Logo GreenMarket"
+                 width="50"
+                 height="50"
+                 class="rounded-circle me-2">
+
+            <span>GreenMarket</span>
+
+        </a>
+
+        <button class="navbar-toggler bg-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="acceuil.html">
+                        Accueil
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="boutique.html">
+                        Boutiques
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="panier.html">
+                        🛒
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="connexion.html">
+                        Connexion
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!-- FORMULAIRE -->
+<div class="container py-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-5">
+
+            <div class="card reset-card p-4">
+
+                <h2 class="text-center mb-4">
+                    Mot de passe oublié
+                </h2>
+
+                <p class="text-center text-muted mb-4">
+                    Entrez votre adresse email pour recevoir un lien de réinitialisation.
+                </p>
+
+                <form>
+
+                    <!-- email -->
+                    <div class="mb-4">
+
+                        <label class="form-label">
+                            Adresse Email
+                        </label>
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Entrer votre email"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- bouton -->
+                    <button class="btn btn-green w-100">
+
+                        Envoyer le lien
+
+                    </button>
+
+                </form>
+
+                <!-- retour connexion -->
+                <div class="text-center mt-4">
+
+                    <a href="connexion.html"
+                       class="text-success text-decoration-none fw-bold">
+
+                        Retour à la connexion
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
